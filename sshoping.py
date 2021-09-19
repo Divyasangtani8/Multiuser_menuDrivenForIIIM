@@ -6,7 +6,9 @@ except AttributeError:
 color.write("\n- - - - - - - - - - -WELCOME- - - - - - - - - - - - - \n","KEYWORD")
 
 color.write(" Satnam Cafeteria\n","BUILTIN")
-color.write("\n\tOur Menu : \n  CupCakes  20/- per peice \n  VegCups 10/- per peice\n ","STRING")
+color.write("\n\tOur Menu : \n"
+            "CupCakes  20/- per peice \n"
+            "VegCups 10/- per peice\n ","STRING")
 color.write("\nTime to add them to your cart -\n","stderr")
 num=int(input("enter no. of CupCakes you want : "))
 num1=int(input("enter no. of VegCups you want : "))

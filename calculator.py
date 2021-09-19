@@ -1,6 +1,5 @@
 def add(n1,n2):
     return n1+n2
-
 def sub(n1,n2):
     return n1-n2
 
@@ -10,34 +9,40 @@ def multi(n1,n2):
 def div(n1,n2):
     return n1/n2
 
-print(''' operations available  :
-            1 - Add
-            2 - Subtract
-            3 - Multiply
-            4 - Divide''')
+def display():
 
-choice=int(input("select operation by entering the assigned s.no"))
+    print(''' operations available  :
+                1 - Add
+                2 - Subtract
+                3 - Multiply
+                4 - Divide
+                5 - Exit''')
 
-n1=int(input("enter 1st no. : "))
-n2=int(input("enter 2nd no. : "))
+    choice = int(input("select operation by entering the assigned s.no"))
 
-if choice == 1:
-    print("addition is = ",add(n1,n2))
+    n1 = int(input("enter 1st no. : "))
+    n2 = int(input("enter 2nd no. : "))
 
-elif choice == 2:
-    print("subtraction is = ",sub(n1,n2))
+    if choice == 1:
+        print("addition is = ", add(n1, n2))
+        display()
 
-elif choice == 3:
-    print("multiplicaton is = ",multi(n1,n2))
+    elif choice == 2:
+        print("subtraction is = ", sub(n1, n2))
+        display()
+    elif choice == 3:
+        print("multiplicaton is = ", multi(n1, n2))
+        display()
+    elif choice == 4:
+        print("division is = ", div(n1, n2))
+        display()
+    elif choice == 5:
+        print("Thank you for using our service...")
 
-elif choice == 4:
-    print("division is = ",div(n1,n2))
-
-else:
-    print("enter the input again")
+    else:
+        print("enter the input again")
+        display()
     
-    
-
-
+display()
 
     
